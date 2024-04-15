@@ -31,12 +31,16 @@ const NoticePage = () => {
                     <div className="navigation">
                         <ul>
                             <li className={activeIndex === 0 ? 'list active' : 'list'} onClick={() => handleItemClick(0)}>
+                                <b></b>
+                                <b></b>
                                 <a href="#">
                                     <span className='icon'></span>
                                     <span className='title'>Class Name</span>
                                 </a>
                             </li>
                             <li className={activeIndex === 1 ? 'list active' : 'list'} onClick={() => handleItemClick(1)}>
+                                <b></b>
+                                <b></b>
                                 <a href="#">
                                     <span className='icon'></span>
                                     <span className='title'>Class Name</span>
