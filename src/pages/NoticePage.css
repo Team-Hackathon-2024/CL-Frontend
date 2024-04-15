@@ -81,9 +81,10 @@ nav{
   }
 
 .left-menu{
-    width: 14vw;
+    width: 300px;
     height: 781px;
-    background: #301759;  
+    background: #fff;  
+    position: relative;
 }
 
 .right-main{
@@ -131,8 +132,8 @@ nav{
 
 .right-down{
     height: 650px;
-    width: 1684px;
-    padding: 30px 174px;
+    width: 1084px;
+    padding: 30px 134px;
     /* background-color: chartreuse; */
 }
 .card{
@@ -175,16 +176,16 @@ nav{
 
 
 .navigation{
-    position: fixed;
-    top: 20px;
+    /* position: fixed; */
+    /* top: 20px;
     left: 20px;
-    bottom: 20px;
-    width: 300px;
-    border-radius: 10px;
+    bottom: 20px; */
+    height: 781px;
+    width: 295px;
     box-sizing: initial;
-    border-left: 5px solid #4d5bf9;
-    background-color: #4d5bf9;
-    transition: width 0.5s;
+    border-left: 5px solid #301759;
+    background-color: #301759;
+    /* transition: width 0.5s; */
 }
 
 .navigation ul{
@@ -204,8 +205,53 @@ nav{
     border-bottom-left-radius: 20px;
 }
 
+.navigation ul li b:nth-child(1){
+    position: absolute;
+    top: -20px;
+    height: 20px;
+    width: 100%;
+    background: #DCE8FF;
+    display: none;
+}
+
+.navigation ul li b:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    background: #301759;
+}
+
+.navigation ul li b:nth-child(2){
+    position: absolute;
+    bottom: -20px;
+    height: 20px;
+    width: 100%;
+    background: #DCE8FF;
+    display: none;
+}
+
+.navigation ul li b:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    background: #301759;
+}
+
+.navigation ul li.active b:nth-child(1),
+.navigation ul li.active b:nth-child(2){
+    display: block;
+}
+
 .navigation ul li.active{
-    background-color: #fff;
+    background-color: #DCE8FF
 }
 
 .navigation ul li a{
