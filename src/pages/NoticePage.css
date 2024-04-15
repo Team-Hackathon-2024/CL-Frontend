@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    background: #DCE8FF;
+}
+
+nav{
+    height: 90px;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #393939;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+    margin-left: 39px;
+    gap: 10px;
+}
+.nav-icon img{
+    height: 3vw;
+    width: 3vw;
+}
+
+.nav-icon h1{
+    font-family: "Kyiv*Type Titling"; 
+    color: #030E6D; 
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase; 
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn img{
+    margin-left: 30px;
+    margin-right: 50px;
+    border-radius: 100%;
+}
+.btn button{
+    margin-left: 30px;
+    width: 140px; 
+    height: 47px; 
+    border: 2px solid #000;
+    background: #FFF;
+    box-shadow: -4px 4px 0px 0px #000;
+    cursor: pointer;
+    color: #000;
+    font-family: "Source Code Pro";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%; 
+}
+.content{
+    height: calc(100%-90px);
+    width: 100%;
+    display: flex;
+    /* background-color: red; */
+}
+#float {
+    position: absolute;
+    height: 5vw;
+    margin: 40px;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+  }
+
+.left-menu{
+    width: 14vw;
+    height: 781px;
+    background: #301759;  
+}
+
+.right-main{
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.right-top button{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    padding: 8px 16px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 5px; 
+    background: #301759;
+    cursor: pointer;
+}
+.right-main button h1{
+    color: #FFF;
+    font-family: Koulen;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+   
+
+}
+
+.right-top{
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+    /* background-color: brown; */
+}
+
+#notice{
+    background: #07122C; 
+}
+
+
+
+.right-down{
+    height: 650px;
+    width: 1684px;
+    padding: 30px 174px;
+    /* background-color: chartreuse; */
+}
+.card{
+    width: 1350px;
+    height: 80px;
+    background: #FFF;
+    display: flex;
+    position: relative;
+    gap: 160px;
+}
+
+.shape{
+    width: 300px;
+    height: 80px;
+    border-radius: 0px 0px 35px 0px;
+    background: #FF8787;
+}
+
+.card h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 17px;
+    color: #000;
+    font-family: Koulen;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.card h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    color: #000;
+    font-family: Kosugi;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.navigation{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-sizing: initial;
+    border-left: 5px solid #4d5bf9;
+    background-color: #4d5bf9;
+    transition: width 0.5s;
+}
+
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+}
+
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.navigation ul li.active{
+    background-color: #fff;
+}
+
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation ul li.active a{
+    color: #000;
+}
+
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding-left: 80px;
+    height: 60px;
+    line-height: 60px;
+    white-space: normal;
+    font-size: 1.5rem;
+}
