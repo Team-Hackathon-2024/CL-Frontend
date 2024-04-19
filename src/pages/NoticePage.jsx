@@ -8,6 +8,9 @@ import attendance from '../assets/Checked User Male.png'
 import notice from '../assets/Notice.png'
 import add from '../assets/Add.svg'
 import './NoticePage.css'
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { LogOut, Settings, User } from "lucide-react";
 
 const NoticePage = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -23,7 +26,33 @@ const NoticePage = () => {
                 <div className="btn">
                     <button>Add a class</button>
                     <button>Join a class</button>
-                    <img src={user} alt="user"/>
+                    {/* <img src={user} alt="user"/> */}
+                </div>
+                <div className="user">
+                    <DropdownMenu>
+                        <DropdownMenuTrigger>
+                            <Avatar>
+                                <AvatarImage src={user} />
+                                <AvatarFallback>PF</AvatarFallback>
+                            </Avatar>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent>
+                            <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                            <DropdownMenuSeparator />
+                            <DropdownMenuItem>
+                                <User className="mr-2 h-4 w-4" />
+                                <span>Profile</span>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem>
+                                <Settings className="mr-2 h-4 w-4" />
+                                <span>Settings</span>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem>
+                                <LogOut className="mr-2 h-4 w-4" />
+                                <span>Log out</span>
+                            </DropdownMenuItem>
+                        </DropdownMenuContent>
+                    </DropdownMenu>
                 </div>
             </nav>
             <div className="content">

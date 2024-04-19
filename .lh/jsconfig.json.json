@@ -1,0 +1,18 @@
+{
+    "sourceFile": "jsconfig.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1713473791364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1713473791364,
+            "name": "Commit-0",
+            "content": "{\n    \"compilerOptions\": {\n      // ...\n      \"baseUrl\": \".\",\n      \"paths\": {\n        \"@/*\": [\n          \"./src/*\"\n        ]\n      }\n      // ...\n    }\n  }\n  "
+        }
+    ]
+}
