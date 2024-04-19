@@ -1,0 +1,46 @@
+{
+    "sourceFile": "tailwind.config.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1713483107866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1713483113894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     './pages/**/*.{js,jsx}',\n     './components/**/*.{js,jsx}',\n     './app/**/*.{js,jsx}',\n     './src/**/*.{js,jsx}',\n-    \n+    \"./index.html\", \"./src/**/*.{js,ts,jsx,tsx}\",\n   ],\n   prefix: \"\",\n   theme: {\n     container: {\n"
+                },
+                {
+                    "date": 1713483120203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     './pages/**/*.{js,jsx}',\n     './components/**/*.{js,jsx}',\n     './app/**/*.{js,jsx}',\n     './src/**/*.{js,jsx}',\n-    \"./index.html\", \"./src/**/*.{js,ts,jsx,tsx}\",\n+    \"./index.html\", \"./src/**/*.{js,ts,jsx,tsx}',\n   ],\n   prefix: \"\",\n   theme: {\n     container: {\n"
+                },
+                {
+                    "date": 1713483127278,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     './pages/**/*.{js,jsx}',\n     './components/**/*.{js,jsx}',\n     './app/**/*.{js,jsx}',\n     './src/**/*.{js,jsx}',\n-    \"./index.html\", \"./src/**/*.{js,ts,jsx,tsx}',\n+     ./index.html\", \"./src/**/*.{js,ts,jsx,tsx}',\n   ],\n   prefix: \"\",\n   theme: {\n     container: {\n"
+                },
+                {
+                    "date": 1713483134292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     './pages/**/*.{js,jsx}',\n     './components/**/*.{js,jsx}',\n     './app/**/*.{js,jsx}',\n     './src/**/*.{js,jsx}',\n-     ./index.html\", \"./src/**/*.{js,ts,jsx,tsx}',\n+    './index.html\", \"./src/**/*.{js,ts,jsx,tsx}',\n   ],\n   prefix: \"\",\n   theme: {\n     container: {\n"
+                },
+                {
+                    "date": 1713483199745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+\n /** @type {import('tailwindcss').Config} */\n module.exports = {\n   darkMode: [\"class\"],\n   content: [\n"
+                },
+                {
+                    "date": 1713483223547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-\n+const flowbite = require(\"flowbite-react/tailwind\");\n /** @type {import('tailwindcss').Config} */\n module.exports = {\n   darkMode: [\"class\"],\n   content: [\n@@ -7,8 +7,9 @@\n     './components/**/*.{js,jsx}',\n     './app/**/*.{js,jsx}',\n     './src/**/*.{js,jsx}',\n     './index.html\", \"./src/**/*.{js,ts,jsx,tsx}',\n+    \n   ],\n   prefix: \"\",\n   theme: {\n     container: {\n"
+                },
+                {
+                    "date": 1713483267314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     './components/**/*.{js,jsx}',\n     './app/**/*.{js,jsx}',\n     './src/**/*.{js,jsx}',\n     './index.html\", \"./src/**/*.{js,ts,jsx,tsx}',\n-    \n+    flowbite.content(),\n   ],\n   prefix: \"\",\n   theme: {\n     container: {\n@@ -75,6 +75,6 @@\n         \"accordion-up\": \"accordion-up 0.2s ease-out\",\n       },\n     },\n   },\n-  plugins: [require(\"tailwindcss-animate\")],\n+  plugins: [require(\"tailwindcss-animate\"),],\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1713483107866,
+            "name": "Commit-0",
+            "content": "/** @type {import('tailwindcss').Config} */\nmodule.exports = {\n  darkMode: [\"class\"],\n  content: [\n    './pages/**/*.{js,jsx}',\n    './components/**/*.{js,jsx}',\n    './app/**/*.{js,jsx}',\n    './src/**/*.{js,jsx}',\n    \n  ],\n  prefix: \"\",\n  theme: {\n    container: {\n      center: true,\n      padding: \"2rem\",\n      screens: {\n        \"2xl\": \"1400px\",\n      },\n    },\n    extend: {\n      colors: {\n        border: \"hsl(var(--border))\",\n        input: \"hsl(var(--input))\",\n        ring: \"hsl(var(--ring))\",\n        background: \"hsl(var(--background))\",\n        foreground: \"hsl(var(--foreground))\",\n        primary: {\n          DEFAULT: \"hsl(var(--primary))\",\n          foreground: \"hsl(var(--primary-foreground))\",\n        },\n        secondary: {\n          DEFAULT: \"hsl(var(--secondary))\",\n          foreground: \"hsl(var(--secondary-foreground))\",\n        },\n        destructive: {\n          DEFAULT: \"hsl(var(--destructive))\",\n          foreground: \"hsl(var(--destructive-foreground))\",\n        },\n        muted: {\n          DEFAULT: \"hsl(var(--muted))\",\n          foreground: \"hsl(var(--muted-foreground))\",\n        },\n        accent: {\n          DEFAULT: \"hsl(var(--accent))\",\n          foreground: \"hsl(var(--accent-foreground))\",\n        },\n        popover: {\n          DEFAULT: \"hsl(var(--popover))\",\n          foreground: \"hsl(var(--popover-foreground))\",\n        },\n        card: {\n          DEFAULT: \"hsl(var(--card))\",\n          foreground: \"hsl(var(--card-foreground))\",\n        },\n      },\n      borderRadius: {\n        lg: \"var(--radius)\",\n        md: \"calc(var(--radius) - 2px)\",\n        sm: \"calc(var(--radius) - 4px)\",\n      },\n      keyframes: {\n        \"accordion-down\": {\n          from: { height: \"0\" },\n          to: { height: \"var(--radix-accordion-content-height)\" },\n        },\n        \"accordion-up\": {\n          from: { height: \"var(--radix-accordion-content-height)\" },\n          to: { height: \"0\" },\n        },\n      },\n      animation: {\n        \"accordion-down\": \"accordion-down 0.2s ease-out\",\n        \"accordion-up\": \"accordion-up 0.2s ease-out\",\n      },\n    },\n  },\n  plugins: [require(\"tailwindcss-animate\")],\n}"
+        }
+    ]
+}
